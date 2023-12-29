@@ -3,6 +3,7 @@
 1. install cargo generate `cargo install cargo-generate`
 2. run `cargo generate --git https://github.com/dcaponi/esp32-rust-template`
 3. ensure the project builds & links `cargo build`
+   1. If that dumps a ton of errors for missing packages see the recommendation in the error message -> `rustup target add riscv32imc-unknown-none-elf`
 4. Now quit f*cking around and honk a bunch of one bits to your device -BCR
 
 # Other Things You Might Need
@@ -20,3 +21,4 @@ dfu-util package-config
 *llvm tools preview* `rustup component add llvm-tools-preview`
 
 *Add the risc-v target for esp32 devices* `rustup target add riscv32imc-unknown-none-elf`
+
